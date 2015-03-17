@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
+
 <title>Dodo | Mini Games</title>
 </head>
 
@@ -10,10 +11,13 @@
 <!-- <embed src="Music.mp3" autostart="true" loop="true"
 width="2" height="0">
 </embed> -->
-<audio src="Music.mp3" autoplay>
+<audio src="Music.mp3" id="Music" controls autoplay>
  <!--  Your browser does not support the <code>audio</code> element. -->
 </audio>
-
+<script>
+var musik = document.getElementById("Music");
+musik.volume=0.05;
+</script>
 <noembed>
 <bgsound src="Music.mp3" loop="infinite">
 </noembed>
