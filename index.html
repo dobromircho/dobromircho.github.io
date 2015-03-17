@@ -1,116 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <title>Dodo Mini Games</title>
-    <meta charset="utf-8">
-    
-    <link rel="stylesheet" href="css/style.css">
-     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <style type="text/css">
-    body,td,th {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 24px;
-	color: #9966FF;
-}
-    h1 {
-	color: #F9F;
-	font-size: 48px;
-}
-h2 {
-	font-size: 24px;
-	color: #C3F;
-}
-    h1,h2,h3,h4,h5,h6 {
-	font-family: "Times New Roman", Times, serif;
-	font-weight: bold;
-	font-style: italic;
-}
-    </style>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.1.1.js"></script>
-    <script src="js/bgstretcher.js"></script>
-    <script>
-	$(function(){
-      //  Initialize Backgound Stretcher
-      $('BODY').bgStretcher({
-        images: ['gameImages/PacManLogo.jpg','gameImages/Logo.jpg'], 
-		imageWidth: 1920, 
-		imageHeight: 1080, 
-		resizeProportionally:true,
-			slideDirection: 'N',
-			slideShowSpeed: 1000,
-			transitionEffect: 'fade',
-			sequenceMode: 'normal',		
-			pagination: ''
-	
-       });	
-    });
-    </script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Dodo | Mini Games</title>
+</head>
 
-  ga('create', 'UA-56789165-1', 'auto');
-  ga('send', 'pageview');
+<body>
+<!-- <embed src="Music.mp3" autostart="true" loop="true"
+width="2" height="0">
+</embed> -->
+<audio src="Music.mp3" autoplay>
+ <!--  Your browser does not support the <code>audio</code> element. -->
+</audio>
 
-     </script>
-
-    <!--[if lt IE 8]>
-   <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
- 	<![endif]-->
-    <!--[if lt IE 9]>   
-    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-   <script src="js/html5shiv.js"></script>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>  
-  <![endif]-->
-
- </head>
- <body>
-<div class="extra-block1"> 
-      <!--==============================row-top=================================-->
-  
-      <!--==============================header=================================-->
-      
-      <header>
-    <div class="row-nav">
-          <div class="main">
-        <h1 class="logo">&nbsp;</h1>
-        <h2 class="main"><em>Mini Games</em></h2>
-        <h1><em>By DODO</em></h1>
-        <nav>
-           <ul class="menu">
-            <li><a href="3Dfootball.html">3Dfootball</a></li>
-            <li><a href="CarRace.html">Car Race Game</a></li>
-            <li><a href="CarcMan.html">Carc Man(pac man)</a></li>
-            <li><a href="PingPong.html">PingPong</a></li>
-            <li><a href="Tarkanoid.html">Tarkanoid</a></li>
-          </ul>
-       </nav>
-       <p></p>
-       <h1 style="color: #AAA; text-shadow: #C9F;text-shadow:"></h1>
-        <div class=""><p></p></div>
-      </div>
-    </div>
-  </header>
-  
-  <section id="content">
-  
-  </section>
-  
-  <p></p>
- 
-  
- 
- 
-      
-      <!--==============================footer================================-->
- 
- 
+<noembed>
+<bgsound src="Music.mp3" loop="infinite">
+</noembed>
+<div id="container">
+		<div id="mainpic">
+        	<h1><div class="lightblue"></h1>
+            <!-- <h2>A template by Bryant Smith</h2> -->
+        </div>   
+        
+        <div id="menu">
+        	<ul>
+            	<li class="menuitem"><a href="https://github.com/dobromircho">Source Code</a></li>
+                <li class="menuitem"><a href="3Dfootball.html">Football</a></li>
+                <li class="menuitem"><a href="CarRace.html">Car Game</a></li>
+                <li class="menuitem"><a href="CarcMan.html">ParcMan </a></li>
+                <li class="menuitem"><a href="PingPong.html">Ping Pong</a></li>
+                <li class="menuitem"><a href="Tarkanoid.html">Tarkanoid</a></li>
+            </ul>
+        </div>
+        
+		<!-- <div id="content">
+        	 <h2>You may use this template in any manner you like. All I ask is that you leave the link back to my site at the bottom of the page. </h2>
+        	<p>&nbsp;</p>
+           	<p>&nbsp;</p>
+       	  <h3>Template Notes</h3>
+        	<p>The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like.  If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find &quot;#mainpic h1&quot; in style.css and modify it's &quot;left&quot; and &quot;top&quot; properties, this is also true for the h2 tag.</p>
+        	<p>&nbsp;</p>
+<h3>More information</h3>
+        	<p>I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.</p>
+        	<p>&nbsp;</p>
+        	<h3>Template Notes</h3>
+            <p>The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like.  If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find &quot;#mainpic h1&quot; in style.css and modify it's &quot;left&quot; and &quot;top&quot; properties, this is also true for the h2 tag.</p>
+            <p>&nbsp;</p>
+        	<h3>More information</h3>
+            <p>I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.</p>
+            <p>&nbsp;</p>
+        	<p>&nbsp;</p>
+        	<p>&nbsp;</p>
+<p>&nbsp;</p> 
+            
+            <div id="footer"><h3>web design</h3></div>
+      </div> -->
+   </div>
 </body>
 </html>
