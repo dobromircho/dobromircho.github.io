@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -8,39 +9,33 @@
 </head>
 
 <body>
-<!-- <embed src="Music.mp3" autostart="true" loop="true"
-width="2" height="0">
-</embed> -->
-<audio src="Music.mp3" id="Music" controls autoplay>
- <!--  Your browser does not support the <code>audio</code> element. -->
-</audio>
-<script>
-var music = document.getElementById("Music");
-music.volume=0.05;
-</script>
-<noembed>
-<bgsound src="Music.mp3" loop="infinite">
-</noembed>
-<div id="container">
+	<audio src="Music.mp3" id="Music" controls autoplay>
+	</audio>
+	<script>
+	var music = document.getElementById("Music");
+	music.volume=0;
+	</script>
+	<noembed>
+	<bgsound src="Music.mp3" loop="infinite">
+	</noembed>
+	
+	<div id="container">
 		<div id="mainpic">
-        	<h1><div class="lightblue"></h1>
-            <!-- <h2>A template by Bryant Smith</h2> -->
+        	<div class="lightblue" style="margin-top: 0px;border-top-width: 200px;border-top-style: solid;border-color: rgba(111,111,111,0) transparent transparent;border-left-style: solid;border-left-width: 200px;">
+			</div>
         </div>   
-        
         <div id="menu">
         	<ul>
             	<li class="menuitem"><a href="https://github.com/dobromircho">Source Code</a></li>
-                <li class="menuitem"><a href="3Dfootball.html">Football</a></li>
+                <li id="shnici" class="menuitem"><a href="indexShnici.html">Шници</a></li>
             </ul>
         </div>
-        
-	<div id="content">
-		<div id="menu">
-			<ul>
-				
-			</ul>
+		<div class="image">
+			<img id="shniciPic" src="images/shnici.png"/>
 		</div>
 	</div>
-   </div>
+			
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="JavaScripts.js"></script>
 </body>
 </html>
