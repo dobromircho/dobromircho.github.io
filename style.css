@@ -26,6 +26,11 @@ body {
   width: 940px;
 }
 
+.image
+{
+	display: block;
+}
+
 #mainpic h1
 {
 	position:absolute;
