@@ -1,19 +1,26 @@
 $(document).ready(function() {
 
 	$("#shniciPic").hide();
+	$("#andronoidPic").hide();
 	
 	$(".shnici").mouseenter(function()
 	{
-		$("#shniciPic").css({"position" : "center"});
 		$("#shniciPic").show(100);
 	});
 	
 	$(".shnici").mouseleave(function(){
 		$("#shniciPic").hide(100);
 	});
-  /* $("#menu").onmouseover(function(){
-	  $(this).css("background-color","red");
-  }); */
+	////////////////////
+	$(".andronoid").mouseenter(function()
+	{
+		$("#andronoidPic").show(100);
+	});
+	
+	$(".andronoid").mouseleave(function(){
+		$("#andronoidPic").hide(100);
+	});
+  
 
   
 
