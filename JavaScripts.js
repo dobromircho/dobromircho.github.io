@@ -3,6 +3,7 @@ $(document).ready(function() {
 	$("#shniciPic").hide();
 	$("#andronoidPic").hide();
 	$("#eggsPic").hide();
+	$("#truckPic").hide();
 	
 	$(".shnici").mouseenter(function()
 	{
@@ -30,6 +31,14 @@ $(document).ready(function() {
 	$(".eggs").mouseleave(function(){
 		$("#eggsPic").hide(100);
 	});
-  
+  //*******************************************************
+  $(".monster").mouseenter(function()
+	{
+		$("#truckPic").show(100);
+	});
+	
+	$(".monster").mouseleave(function(){
+		$("#truckPic").hide(100);
+	});
 
 });
