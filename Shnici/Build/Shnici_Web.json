@@ -5,7 +5,7 @@
 "asmCodeUrl": "Shnici_Web.asm.code.unityweb",
 "asmMemoryUrl": "Shnici_Web.asm.memory.unityweb",
 "asmFrameworkUrl": "Shnici_Web.asm.framework.unityweb",
-"TOTAL_MEMORY": 536870912,
+"TOTAL_MEMORY": 805306368,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "backgroundUrl": "Shnici_Web.jpg",
