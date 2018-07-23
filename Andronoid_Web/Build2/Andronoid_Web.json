@@ -1,0 +1,10 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "Andronoid_Web.data.unityweb",
+"asmCodeUrl": "Andronoid_Web.asm.code.unityweb",
+"asmMemoryUrl": "Andronoid_Web.asm.memory.unityweb",
+"asmFrameworkUrl": "Andronoid_Web.asm.framework.unityweb",
+"backgroundUrl": "Andronoid_Web.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF"
+}

@@ -1,49 +1,317 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+
+
 <head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>JD Games</title>
+    <meta name="description" content="game developers and small studios">
+    <meta name="keywords" content="game, gaming, videogame, developer, steam, studio, team">
 
-<title>JD | Mini Games</title>
+    <!-- OG meta tags that improve the look of your post on social media -->
+    <meta property="og:site_name" content="" /><!--website name-->
+    <meta property="og:site" content="" /> <!--website link-->
+    <meta property="og:title" content=""/> <!--Post title-->
+    <meta property="og:description" content="" /> <!--Post description-->
+    <meta property="og:image" content="" /><!-- Image link (jpg only)-->
+    <meta property="og:url" content="" /> <!--where do you want your post to link to-->
+    <meta property="og:type" content="article" />
+
+    <!-- Favicon and Apple Icons -->
+    
+    <!-- STYLES -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Animations -->
+    <link href="css/animations.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
+  
 </head>
-
 <body>
-	
-	
-	<audio  id="click"  volume=0.5>
-				<source src="Click.mp3">
-				<source src="Click.ogg">
-	        </audio>
-	
-	<div id="container">
-		<div id="mainpic">
-        	<div class="lightblue" style="margin-top: 0px;border-top-width: 200px;border-top-style: solid;border-color: rgba(111,111,111,0) transparent transparent;border-left-style: solid;border-left-width: 200px;">
-			</div>
-        </div>   
-		
-        <div id="menu">
-        	<ul>
-			
-            	<li class="menuitem"><a id="button" href="https://github.com/dobromircho">Source Code</a></li>
-                <li class="shnici" ><a id="button" href="Shnici/index.html">Шници</a></li>
-				<li class="andronoid" ><a id="button" href="Andronoid/indexAndronoid.html">Андроноид</a></li>
-				<li class="eggs" ><a id="button" href="Eggs/index.html">Яйцата</a></li>
-				<!-- <li class="monster" ><a id="button" href="MonsterTruck/indexMonsterTruck.html">Камиона</a></li> -->
-				<!-- <li class="forest" ><a id="button" href="WebForest/index.html">Гората</a></li> -->
-            </ul>
+    <!-- Loading Screen -->
+    <div id="loader-wrapper">
+        <h1 class="loader-logo"><span class="colored">JD</span>games</h1>
+        <div id="progress"></div>
+        <h3 class="loader-text">LOADING</h3>
+    </div>
+    
+    <!-- //// HEADER //// -->
+    <header id="main-header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Site Logo -->
+                <a id="logo" class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" alt="site logo"></a>
+                <!-- Dropdown Button -->
+                <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#games">Games</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!-- Header End -->
+    
+    <!-- /// HERO SECTION /// -->
+    <div id="hero-section" class="small-margin">
+        <div id="particles-web"></div>
+        <div class="row hero-unit">
+            <div class="container">
+                <div class="hero-caption"><!-- Main Tagline -->
+                    <h1>JD <span class="colored"> Mini Games</span></h1>
+                </div>
+            </div>
         </div>
-		<div class="image">
-			<img id="sourcePic" src="images/source.png" />
-			<img id="shniciPic" src="images/shnici2.png" />
-			<img id="andronoidPic" src="images/аndronoid.png" />
-			<img id="eggsPic" src="images/eggs.png" />
-			<img id="truckPic" src="images/Truck.png" />
-		</div>
-		
-	</div>
-			
-	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="JavaScripts.js"></script>
+    </div><!-- Hero Section End -->
+    
+    <!-- /// Main Container /// -->
+    <div class="container">
+        <!-- /// ABOUT SECTION /// -->
+        
+            
+        <!-- /// GAMES SECTION /// -->
+        <div id="games" class="large-margin">
+            <a href="games.html"></a><!-- Nav Anchor -->
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">OUR <span class="colored">GAMES</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-11 small-margin">
+                   <p></p>
+                </div>
+                <div class="col-md-12">
+                    <ul class="game-tags">
+                        <li>Sort By Tag :</li>
+                        <li><a href="#" data-filter="*">All</a></li>
+                        <li><a href="#" data-filter=".pc">PC/WEB</a></li>
+                        <li><a href="#" data-filter=".mobile">Mobile</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="games-portfolio ">
+                <div class="row game-card pc"><!-- Game Card -->
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <a href="images/game1_large.jpg" data-lightbox="screenshots_aurora">
+                            <div class="overlay">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/game1.jpg">
+                                <source media="(min-width: 768px)" srcset="images/game1_large.jpg">
+                                <img src="images/game1.jpg" class="img-fluid" alt="aurora image">
+                            </picture>
+                        </a>
+                        <a href="images/game1.1.jpg" data-lightbox="screenshots_aurora"></a>
+                        <a href="images/game1.2.jpg" data-lightbox="screenshots_aurora"></a>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left">Шници и г-н Ламантин</h2>
+                        <p class="tags"><span class="subtle"> PC | Web | Mobile</span> </p>
+                        <p class="game-description">Мъничката русалка Шници е обезпокоена за своя дом - моретата и океаните! Те са осеяни с толкова много боклуци и в скоро време могат да изместят невинните им обитатели. Можеш ли да помогнеш на Шници да се справи с този проблем? </p>
+						<a href="#" class="button-store">
+                            <i class="fa fa-android fa-2x"></i>
+                            <p>Available on<br><span class="strong">Google Play</span></p>
+                        </a>
+						<a target="_blank" rel="noopener noreferrer" href="Shnici_Web/index.html" class="button-store">
+                            <i class="fa fa-globe fa-2x"></i>
+                            <p>PLAY <br><span class="strong">ONLINE</span></p>
+                        </a>
+                        
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade game-modal" id="game1" tabindex="-1" role="dialog" aria-labelledby="aurora" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="aurora"></h1>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div> 
+                              
+                            </div>
+                        </div>
+                     </div>
+                </div><!-- Game Card End -->
+                <div class="row game-card mobile"><!-- Game Card -->
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <a href="images/game2_large.jpg" data-lightbox="screenshots_dark">
+                            <div class="overlay">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/game2.jpg">
+                                <source media="(min-width: 768px)" srcset="images/game2_large.jpg">
+                                <img src="images/game2.jpg" class="img-fluid" alt="aurora image">
+                            </picture>
+                        </a>
+                        <a href="images/game2.1.jpg" data-lightbox="screenshots_dark"></a>
+                        <a href="images/game2.2.jpg" data-lightbox="screenshots_dark"></a>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left">Андроноид / Andronoid</h2>
+                        <p class="tags"><span class="subtle"> PC | Web | Mobile</span></p>
+                        <p class="game-description">Класическата игра за чупене на блокчета в нова визия!</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.JDGAMES.Andronoid" class="button-store">
+                            <i class="fa fa-android fa-2x"></i>
+                            <p>Available on<br><span class="strong">Google Play</span></p>
+                        </a>
+						<a target="_blank" rel="noopener noreferrer" href="Andronoid_Web/index.html" class="button-store">
+                            <i class="fa fa-globe fa-2x"></i>
+                            <p>PLAY <br><span class="strong">ONLINE</span></p>
+                        </a>
+						
+                        
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade game-modal" id="game2" tabindex="-1" role="dialog" aria-labelledby="echo" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="echo"></h1>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Game Card End -->
+            </div>
+        </div>
+        <!-- /// TEAM SECTION /// -->
+        <div id="team" class="large-margin">
+            <a href="team.html"></a><!-- Nav Anchor -->
+            
+           <div class="row tiny-margin">
+                
+            </div>
+            
+        </div>
+        <!-- /// CAREERS SECTION /// -->
+       
+                 
+        <!-- /// CONTACT SECTION /// -->
+        <div id="contact" class="large-margin">
+            <a href="contact.html"></a><!-- Nav Anchor -->
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">GET IN <span class="colored">TOUCH</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="">
+                <div class="row small-margin">
+                    <div class="col-md-11">
+                        <p>We would love to hear from you.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="short-hr-left">LEAVE US A MESSAGE</h2>
+                        <form id="contactForm" data-toggle="validator">
+                            <div class="form-group">
+                                <!-- Name Field -->
+                                <input type="text" id="name" placeholder="Name*" required size="35" data-error="Name is required">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email Field -->
+                                <input type="email" id="email" placeholder="Email*" required size="35" data-error="Email is required">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Message Field -->
+                                <textarea id="message" name="message" placeholder="Message*" required data-error="Message cannot be empty"></textarea>
+                                <p class="subtle">* required field</p>
+                                <div class="help-block with-errors"></div>
+                                <!-- Submit Button -->
+                                <button type="submit" class="button">SEND MESSAGE</button>
+                                <!-- Success Message -->
+                                <div id="msgSubmit" class="text-center hidden"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="short-hr-left">OUR DETAILS</h2>
+                        <div id="contact-info">
+                            <ul>
+                                <!-- <li><i class="fa fa-phone"></i><p>Phone: <span class="colored"><a href="tel:+1(803)635585">+1 (803) 635 585</a></span></p></li> -->
+                                <li><i class="fa fa-envelope"></i><p>Email: <span class="colored"><a href="mailto:JiDo.United@gmail.com">JiDo.United@gmail.com</a></span></p></li>
+                                <li><i class="fa fa-globe"></i><p>Website: <span class="colored"><a href="www.jdgames.eu" target="_blank">www.jdgames.eu</a></span></p></li>
+                                <!-- <li><i class="fa fa-map-marker"></i><p>Address: <span class="colored">1168 12th Street East Oconomowoc, WI 53066</span></p></li> -->
+                            </ul>
+                        </div>
+                        <!-- Google Map -->
+                        <!-- <div id="map-canvas"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Main Container End -->
+    <!-- /// FOOTER /// -->
+    <footer id="main-footer">
+        <div id="footer"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="copyright">&copy; JDgames
+                            <script type="text/javascript">
+                                document.write(new Date().getFullYear());  // auto-updating year with javascript
+                            </script></p><!-- Copyright Text -->
+                        <ul class="social-links"> <!-- Social Media Icons -->
+                            <li><a href="#"><i class="fa fa-facebook fa-lg icon-social"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter  fa-lg icon-social"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus fa-lg icon-social"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin fa-lg icon-social"></i></a>
+                            <li><a href="#"><i class="fa fa-pinterest fa-lg icon-social"></i></a>
+                            <li><a href="#"><i class="fa fa-instagram fa-lg icon-social"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- Container End -->
+        </div>
+    </footer><!-- Footer End -->
+    
+    <!-- //// SCRIPTS //// -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/strider.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB64kJJiSynOc9ZqkNMOyl94cvsw5Z2uno"></script>
 </body>
-</html>
