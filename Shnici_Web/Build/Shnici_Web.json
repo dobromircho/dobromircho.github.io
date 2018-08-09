@@ -2,6 +2,8 @@
 "companyName": "JDgames",
 "productName": "Shnici",
 "dataUrl": "Shnici_Web.data.unityweb",
+"wasmCodeUrl": "Shnici_Web.wasm.code.unityweb",
+"wasmFrameworkUrl": "Shnici_Web.wasm.framework.unityweb",
 "asmCodeUrl": "Shnici_Web.asm.code.unityweb",
 "asmMemoryUrl": "Shnici_Web.asm.memory.unityweb",
 "asmFrameworkUrl": "Shnici_Web.asm.framework.unityweb",
@@ -10,5 +12,6 @@
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "backgroundUrl": "Shnici_Web.jpg",
 "splashScreenStyle": "Dark",
-"backgroundColor": "#FFFFFF"
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"}
 }
