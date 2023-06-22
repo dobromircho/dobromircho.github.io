@@ -58,13 +58,13 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Shnici_html5.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Shnici_html5.data.gz",
-        frameworkUrl: buildUrl + "/Shnici_html5.framework.js.gz",
-        codeUrl: buildUrl + "/Shnici_html5.wasm.gz",
+        dataUrl: buildUrl + "/Shnici_html5.data.unityweb",
+        frameworkUrl: buildUrl + "/Shnici_html5.framework.js.unityweb",
+        codeUrl: buildUrl + "/Shnici_html5.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "JDgames",
         productName: "Shnici",
-        productVersion: "1.0",
+        productVersion: "2.0",
         showBanner: unityShowBanner,
       };
 
@@ -95,7 +95,7 @@
         canvas.style.height = "720px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/Shnici_html5.jpg.gz') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/Shnici_html5.jpg.unityweb') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
